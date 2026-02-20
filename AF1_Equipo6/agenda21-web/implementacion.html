@@ -1,61 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Implementación - Agenda 21</title>
+    <meta charset="UTF-8">
+    <title>Objetivos | EcoProyecto</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Implementación de la Agenda 21</h1>
-</header>
-
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="historia.html">Historia</a>
-    <a href="objetivos.html">Objetivos</a>
-    <a href="implementacion.html">Implementación</a>
-    <a href="impacto.html">Impacto Global</a>
+<nav class="navbar">
+    <div class="logo">Agenda 21</div>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="impacto.html">Impacto</a></li>
+        <li><a href="implementacion.html">Implementación</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+    </ul>
 </nav>
 
-<div class="container">
+<section class="page-section">
+    <h1>Objetivos</h1>
+    <ul class="objetivos-lista">
+        <li>Promover prácticas agrícolas sostenibles.</li>
+        <li>Reducir el uso excesivo de fertilizantes químicos.</li>
+        <li>Fomentar la educación ambiental en la comunidad.</li>
+        <li>Desarrollar soluciones ecológicas innovadoras.</li>
+    </ul>
+</section>
 
-<div class="card">
-<h2>Agenda 21 Local</h2>
-<p>
-Muchos municipios adoptaron planes llamados "Agenda 21 Local", 
-adaptando los principios globales a necesidades específicas de cada comunidad.
-</p>
+<section class="page-section">
+<div class="upload-box">
+    <h2>Subir Imagen</h2>
+    <input type="file" id="imageUpload" accept="image/*">
+    <button id="uploadImageBtn">Subir Imagen</button>
+    <div id="imageList" class="file-list"></div>
 </div>
 
-<div class="card">
-<h2>Participación Ciudadana</h2>
-<p>
-Uno de los pilares fundamentales es la inclusión de la sociedad civil. 
-Gobiernos locales trabajan junto con ciudadanos, universidades y organizaciones ambientales.
-</p>
+<div class="upload-box">
+    <h2>Subir Documento PDF</h2>
+    <input type="file" id="pdfUpload" accept="application/pdf">
+    <button id="uploadPdfBtn">Subir PDF</button>
+    <div id="pdfList" class="file-list"></div>
 </div>
+</section>
 
-<div class="card">
-<h2>Políticas Públicas</h2>
-<p>
-Se han implementado regulaciones ambientales, planes de manejo de residuos, programas de educación ambiental y estrategias de energía renovable.
-</p>
-</div>
-
-<div class="card">
-<h2>Cooperación Internacional</h2>
-<p>
-La cooperación entre países es esencial para abordar problemas globales como el cambio climático, 
-la desertificación y la pérdida de biodiversidad.
-</p>
-</div>
-
-</div>
-
-<footer>
-Proyecto Académico 2026 - Implementación
-</footer>
+<script type="module" src="script.js"></script>
 
 </body>
 </html>

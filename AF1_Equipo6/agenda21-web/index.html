@@ -1,56 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Agenda 21 - Inicio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería Sustentable</title>
+
+<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+<link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Agenda 21</h1>
-    <p>Plan Global para el Desarrollo Sostenible del Siglo XXI</p>
-</header>
-
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="historia.html">Historia</a>
-    <a href="objetivos.html">Objetivos</a>
-    <a href="implementacion.html">Implementación</a>
-    <a href="impacto.html">Impacto Global</a>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Agenda 21</div>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="impacto.html">Impacto</a></li>
+        <li><a href="implementacion.html">Implementación</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+    </ul>
 </nav>
 
-<div class="container">
+<div class="wrapper">
 
-<div class="card">
-<h2>¿Qué es la Agenda 21?</h2>
-<p>
-La Agenda 21 es un programa de acción adoptado en 1992 que busca promover el desarrollo sostenible 
-a nivel global, nacional y local. Su enfoque integra crecimiento económico, equidad social y protección ambiental.
-</p>
+    <!-- HERO -->
+    <section class="container-principal">
+        <div class="left">
+            <div class="texto">
+                <h1>MEDIO AMBIENTE Y SUSTENTABILIDAD</h1>
+                <p>
+                    Un espacio para reflexionar sobre el desarrollo sostenible,
+                    la Agenda 21 y nuestro compromiso con el planeta.
+                </p>
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="imagenes/hero.jpg" alt="Sustentabilidad">
+        </div>
+    </section>
+
+    <!-- PRESENTACIÓN -->
+    <section class="additional-section">
+        <div class="section-content">
+            <h2>¿Qué es la Agenda 21?</h2>
+            <p>
+                La Agenda 21 es un plan de acción global para promover el desarrollo
+                sostenible, integrando dimensiones ambientales, sociales y económicas.
+            </p>
+        </div>
+    </section>
+
+    <!-- CARRUSEL -->
+    <section>
+        <h2 class="call-to-act">Explora nuestra galería ambiental</h2>
+
+        <div class="container-carousel">
+            <div class="carrusel" id="slider">
+                <!-- Imágenes dinámicas -->
+            </div>
+
+            <div class="btn-left">
+                <i class='bx bx-chevron-left'></i>
+            </div>
+
+            <div class="btn-right">
+                <i class='bx bx-chevron-right'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="additional-section">
+        <div class="section-content">
+            <h2>Nuestro Compromiso</h2>
+            <p>
+                Promovemos la educación ambiental, la inclusión social y la
+                participación comunitaria como pilares fundamentales del desarrollo sostenible.
+            </p>
+        </div>
+    </section>
+
 </div>
 
-<div class="card">
-<h2>Contexto Internacional</h2>
-<p>
-Fue aprobada por más de 170 países durante la Cumbre de la Tierra.
-Representó un compromiso histórico para enfrentar problemas como:
-</p>
-<ul>
-<li>Cambio climático</li>
-<li>Deforestación</li>
-<li>Contaminación</li>
-<li>Pobreza global</li>
-</ul>
-<button onclick="mostrarDato()">Mostrar Dato Importante</button>
-<p id="datoCurioso"></p>
-</div>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Compromiso Ambiental</h3>
+            <p>Educación, sostenibilidad e impacto positivo.</p>
+        </div>
 
-</div>
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <p>medioambiente@universidad.edu</p>
+        </div>
 
-<footer>
-Proyecto Académico 2026 - Desarrollo Sustentable
+        <div class="footer-column">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <i class='bxl bx-instagram-alt'></i>
+                <i class='bxl bx-facebook-square'></i>
+                <i class='bxl bx-twitter-x'></i>
+            </div>
+        </div>
+    </div>
 </footer>
+
+
+<!-- MODAL (SE MANTIENE) -->
+<div class="image-modal" id="imageModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+
+        <button class="modal-nav prev">
+            <i class='bx bx-chevron-left'></i>
+        </button>
+
+        <button class="modal-nav next">
+            <i class='bx bx-chevron-right'></i>
+        </button>
+
+        <div class="modal-image-container">
+            <img src="" alt="Imagen completa" id="modalImage">
+        </div>
+
+        <div class="image-info">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescripcion"></p>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/carrusel.js"></script>
+<script src="scripts/modal.js"></script>
 
 </body>
 </html>
